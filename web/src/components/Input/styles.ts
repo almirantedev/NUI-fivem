@@ -9,6 +9,7 @@ export const StyledInput = styled.input<InputProps>`
   width: ${({ width }) => (width ? width : "auto")};
   height: ${({ height }) => (height ? height : "auto")};
   max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "100%")};
+  border-radius: 8px;
   outline: none;
   border: 0;
   color: #e1e1e6;

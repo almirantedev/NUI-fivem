@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 import { TextProps } from "./interfaces";
 
-const TextComponent = styled.p<Omit<TextProps, "children">>`
-  color: ${({ textColor }) => (textColor === "string" ? textColor : "#fff")};
-  font-size: ${({ size }) => (size === "string" ? size : "16px")};
+const TextComponent = styled.span<Omit<TextProps, "children">>`
+  color: ${({ textColor }) => (textColor ? textColor : "#fff")};
+  font-size: ${({ size }) => (size ? size : "16px")};
   font-weight: ${({ weight }) => (weight ? weight : "regular")};
   ${({ underline }) =>
     underline &&

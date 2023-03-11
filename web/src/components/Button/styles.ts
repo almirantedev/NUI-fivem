@@ -13,6 +13,7 @@ export const StyledButton = styled.button<Partial<ButtonProps>>`
 
   color: #fff;
   font-size: 16px;
+  font-weight: bold;
   flex-shrink: 0;
   width: ${({ width }) => (width ? width : "auto")};
   height: ${({ height }) => (height ? height : "auto")};
